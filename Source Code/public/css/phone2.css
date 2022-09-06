@@ -1,0 +1,32 @@
+.devInfo{
+    width: 100%;
+}
+.aboutRow1{
+    width: 62%;
+}
+.aboutRow1 .aboutItem {
+    width: 138%;
+}
+.contInnerItem{
+    font-size: 15px;
+    margin: 8px 8px;
+    padding: 9px 6px;
+}
+.contactItem a{
+    border: 2px solid white;
+}
+.contactItem h2{
+    border: 2px solid #813ff8;
+}
+.aboutItem .secHead{
+    font-size: 1.3rem;
+}
+.aboutItem .devInfo{
+    font-size: 1.0rem;
+}
+.weatherAtr{
+    padding: 0px;
+}
+.weatherBox{
+    padding: 7px 3px;
+}

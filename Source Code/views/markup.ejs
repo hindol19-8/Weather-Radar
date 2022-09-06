@@ -1,0 +1,124 @@
+<%- include("header") %>
+    <div class="containerMain">
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <img id="icon" src="../Images/icon.png" alt="">
+            <a class="navbar-brand">Weatherify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="ham">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About Developers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="">Download</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="homeSection" id="Home">
+            <div class="weatherBox">
+                <div class="container-fluid">
+                    <form class="d-flex searchBox" role="search" method="post" action="/">
+                        <input class="form-control me-2 search-bar" type="search" placeholder="Enter City Name"
+                            aria-label="Search" name="cityName">
+                        <button class="btn btn-secondary" type="submit" name="Search">Search</button>
+                    </form>
+                </div>
+                <div class="weatherAtr">
+                    <h2 class="city head1">Weatherify!</h2>
+                    <div class="temp priHead">Search Weather Freely in your Location!</div>
+                    <img src="" alt="" class="icon">
+                    <div class="otherAtr">
+                        <div class="atrCol">
+                            <div class="description"></div>
+                            <div class="wind"></div>
+                            <div class="humidity"></div>
+                            <div class="vis"></div>
+                        </div>
+                        <div class="atrCol">
+                            <div class="minTemp"></div>
+                            <div class="maxTemp"></div>
+                            <div class="feelsLike"></div>
+                            <div class="pressure"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutSection" id="About">
+            <h2 class="priHead">About The Developers:</h1>
+                <div class="aboutStuff">
+                    <div class="aboutRow1">
+                        <div id="Hindol" class="aboutItem">
+                            <div class="ProfilePics">
+                                <img class="Profiles" src="../Images/Developers/Hindol.png" alt="">
+                            </div>
+                            <h2 class="secHead">
+                                Hindol Banerjee
+                            </h2>
+                            <p class="devInfo">
+                                Full-Stack Website Developer
+                            </p>
+                        </div>
+                        <div id="Arpan" class="aboutItem">
+                            <div class="ProfilePics">
+                                <img class="Profiles" src="../Images/Developers/Arpan.png" alt="">
+                            </div>
+                            <h2 class="secHead">
+                                Arpan De
+                            </h2>
+                            <p class="devInfo">
+                                Android Application Developer
+                            </p>
+                        </div>
+                    </div>
+                    <div class="aboutRow2">
+                        <div id="Ankit" class="aboutItem">
+                            <div class="ProfilePics">
+                                <img class="Profiles" src="../Images/Developers/Ankit.png" alt="">
+                            </div>
+                            <h2 class="secHead">
+                                Ankit Paul
+                            </h2>
+                            <p class="devInfo">
+                                Android Application Developer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="contactSection" id="Contact">
+            <div class="contactBox">
+                <h2 class="priHead contHead">Contact Us:</h2>
+                <div id="hindolContact" class="contactItem " >
+                    <h2 class="secHead2 contInnerItem btn btn-dark">Hindol Banerjee</h2>
+                    <a href="https://linkedin.com/in/hindol-banerjee-93701124b" class="contInnerItem secHead2 btn btn-primary colLinked">LinkedIn</a>
+                    <a href="https://github.com/hindol19-8" class="contInnerItem secHead2 btn btn-success colGit">Github</a>
+                </div>
+                <div id="arpanContact" class="contactItem">
+                    <h2 class="secHead2 contInnerItem btn btn-dark">Arpan De</h2>
+                    <a href="https://www.linkedin.com/in/arpan-de-001ab31b9" class="contInnerItem secHead2 btn btn-primary colLinked">LinkedIn</a>
+                    <a href="https://github.com/neo-deus" class="contInnerItem secHead2 btn btn-success colGit">Github</a>
+                </div>
+                <div id="ankitContact" class="contactItem">
+                    <h2 class="secHead2 contInnerItem btn btn-dark">Ankit Paul</h2>
+                    <a href="https://linkedin.com/in/ankit-paul-914936234/" class="contInnerItem secHead2 btn btn-primary colLinked">LinkedIn</a>
+                    <a href="https://github.com/Ankit-AP-Paul" class="contInnerItem secHead2 btn btn-success colGit">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <%- include("footer") %>
